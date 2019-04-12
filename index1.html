@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Click Click !</title>
+</head>
+
+<body>
+  <p><input type="text" name="" value="" id="numberCounter">
+  <button type="button" name="button" id="buttonCounter">click click !</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+$(function() {
+  $('#buttonCounter').click(function() {
+    $('#numberCounter').html(function(i , val) {
+      return numberCounter.value = val * 1 + 1;
+    });
+  });
+});
+  </script>
+</body>
+
+</html>
